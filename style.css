@@ -1,0 +1,90 @@
+/* Minimal colorful CSS */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Center container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Navbar - float layout */
+.navbar {
+    background: linear-gradient(90deg, #2d6a4f, #4a9c7a);
+    color: white;
+    overflow: hidden;
+    padding: 15px 20px;
+}
+
+.navbar .logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    float: right;
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Headings */
+h1 {
+    color: #1e5f3a;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Events flexbox */
+.events-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-card {
+    background: white;
+    border: 2px solid #4a9c7a;
+    padding: 20px;
+    width: 260px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.event-card h3 {
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+/* Image */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
